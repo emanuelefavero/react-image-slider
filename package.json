@@ -5,8 +5,8 @@
   "type": "module",
   "author": "Emanuele Favero",
   "scripts": {
-    "dev": "concurrently \"vite --port 3000\" \"eslint src\"",
-    "host": "concurrently \"vite --port 3000 --host\" \"eslint src\"",
+    "dev": "concurrently \"vite --port 3000 --open\" \"eslint src\"",
+    "host": "concurrently \"vite --port 3000 --host --open\" \"eslint src\"",
     "build": "tsc && vite build",
     "preview": "vite preview --port 3000"
   },
