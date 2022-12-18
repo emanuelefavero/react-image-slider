@@ -1,3 +1,4 @@
+import './ImageSlider.scss'
 import { useState } from 'react'
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 
@@ -26,13 +27,13 @@ const ImageSlider = ({ sliderData }: Props) => {
   }
 
   return (
-    <section className='slider'>
-      <FaChevronLeft className='left-arrow' onClick={prevSlide} />
-      <FaChevronRight className='right-arrow' onClick={nextSlide} />
+    <section className='imageSlider'>
       {sliderData.map((slide, index) => {
         return (
           <div
-            className={index === current ? 'slide active' : 'slide'}
+            className={`
+            slide ${index === current && 'active'}
+          `}
             key={index}
           >
             {index === current && (
@@ -41,6 +42,8 @@ const ImageSlider = ({ sliderData }: Props) => {
           </div>
         )
       })}
+      <FaChevronLeft className='leftArrow' onClick={prevSlide} />
+      <FaChevronRight className='rightArrow' onClick={nextSlide} />
     </section>
   )
 }
