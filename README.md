@@ -13,10 +13,6 @@ npm i
 npm run dev
 ```
 
-#### Screenshot
-
-![screenshot](./screenshot.png)
-
 > _Note: this project uses react-icons,_
 > to install it on another project, run:
 >

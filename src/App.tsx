@@ -1,4 +1,4 @@
-import ImageSlider from './components/imageSlider'
+import ImageSlider from './components/ImageSlider'
 import { sliderData } from './sliderData'
 
 function App() {
