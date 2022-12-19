@@ -4,6 +4,10 @@ This is a snippet on how to build a simple image slider with React.
 
 > _Note: this project is written in typescript and sass but you can easily convert it to javascript and css_
 
+## Live Demo
+
+[https://react-image-slider-kappa.vercel.app/](https://react-image-slider-kappa.vercel.app/)
+
 ## Usage
 
 - clone and `cd` into the repo, then:
